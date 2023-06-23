@@ -1,0 +1,15 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:${DB_NAME:alien_db}
+    driver-class-name: org.h2.Driver
+    username: ${DB_USER:sa}
+    password: ${DB_PASSWORD:password}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.H2Dialect
+app:
+  additionalParagraph: 'Надеюсь, это поможет Вам. Если у Вас есть какие-либо дополнительные вопросы, пожалуйста, не стесняйтесь спрашивать. С уважением, Земляне!'
